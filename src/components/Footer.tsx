@@ -25,8 +25,7 @@ const Footer = () => {
     ]
   };
 
-  const contactInfo = [
-    { icon: Mail, label: "Email", value: "info@gatirakhshak.gov.in" },
+  const contactInfo = [,
     { icon: Phone, label: "Helpline", value: "1800-111-139" },
     { icon: MapPin, label: "Address", value: "Railway Board, New Delhi - 110001" }
   ];

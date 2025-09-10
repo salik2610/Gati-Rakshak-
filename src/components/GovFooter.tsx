@@ -29,12 +29,6 @@ const GovFooter = () => {
 
   const contactInfo = [
     { 
-      icon: Mail, 
-      label: "Email", 
-      value: "gatiraksak@railnet.gov.in",
-      desc: "Official Government Email"
-    },
-    { 
       icon: Phone, 
       label: "Helpline", 
       value: "139 (Railway Enquiry)",
@@ -100,21 +94,6 @@ const GovFooter = () => {
                   Developed by railway engineers and data scientists who understand ground realities 
                   of operating the world's fourth-largest railway network.
                 </p>
-
-                <div className="flex flex-wrap gap-3">
-                  <Badge className="bg-primary/20 text-primary border-primary/30">
-                    <Shield className="w-4 h-4 mr-2" />
-                    Government Certified
-                  </Badge>
-                  <Badge className="bg-accent/20 text-accent border-accent/30">
-                    <Users className="w-4 h-4 mr-2" />
-                    Public Service
-                  </Badge>
-                  <Badge className="bg-white/10 text-white border-white/20">
-                    <Globe className="w-4 h-4 mr-2" />
-                    National Project
-                  </Badge>
-                </div>
               </div>
 
               {/* Official Emblem & Authority */}
