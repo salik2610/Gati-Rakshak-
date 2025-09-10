@@ -6,7 +6,6 @@ const GovFooter = () => {
   const currentYear = new Date().getFullYear();
 
   const governmentLinks = [
-    { name: "Railway Board", href: "https://railwayboard.gov.in", external: true },
     { name: "Ministry of Railways", href: "https://www.indianrailways.gov.in", external: true },
     { name: "Government of India", href: "https://www.india.gov.in", external: true },
     { name: "Digital India Portal", href: "https://digitalindia.gov.in", external: true }
@@ -19,18 +18,9 @@ const GovFooter = () => {
     { name: "Ujwal - Performance Analytics", href: "#ujwal" }
   ];
 
-  const publicServices = [
-    { name: "PNR Status Enquiry", href: "#", external: true },
-    { name: "Train Schedule Information", href: "#", external: true },
-    { name: "Online Ticket Booking", href: "#", external: true },
-    { name: "Railway Reservation Enquiry", href: "#", external: true },
-    { name: "Complaint Portal", href: "#", external: true },
-    { name: "Passenger Helpline", href: "#", external: true }
-  ];
 
   const legalLinks = [
     { name: "Right to Information (RTI)", href: "#" },
-    { name: "Public Procurement", href: "#" },
     { name: "Terms & Conditions", href: "#" },
     { name: "Privacy Policy", href: "#" },
     { name: "Accessibility Statement", href: "#" },
@@ -89,14 +79,13 @@ const GovFooter = () => {
               {/* Brand & Official Seal */}
               <div className="space-y-6">
                 <div className="flex items-center space-x-4">
-                  <div className="w-20 h-20 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center border-2 border-primary/20">
-                    <div className="text-center">
-                      <div className="text-white font-bold text-2xl font-rajdhani">G</div>
-                      <div className="text-white text-sm font-medium">R</div>
-                    </div>
-                  </div>
+                  <img
+                    src="/logo.png"
+                    alt="Gati Rakshak logo"
+                    className="w-20 h-20 object-contain rounded-lg border-2 border-primary/20"
+                  />
                   <div>
-                    <h3 className="text-3xl font-rajdhani font-bold text-white">GatiRakshak</h3>
+                    <h3 className="text-3xl font-rajdhani font-bold text-white">गति Rakshak</h3>
                     <p className="text-secondary-foreground/80 text-sm font-medium">
                       AI Railway Management System
                     </p>
@@ -129,10 +118,14 @@ const GovFooter = () => {
               </div>
 
               {/* Official Emblem & Authority */}
-              <div className="text-center md:text-right">
-                <div className="inline-block p-8 bg-white/5 rounded-xl border border-white/10">
-                  <div className="w-24 h-24 mx-auto mb-4 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center">
-                    <span className="text-2xl font-bold text-white font-rajdhani">भारत</span>
+              <div className="flex justify-center md:justify-end">
+                <div className="text-center p-8 bg-white/5 rounded-xl border border-white/10">
+                  <div className="w-24 h-24 mx-auto mb-4">
+                    <img
+                      src="/India%20logo.svg"
+                      alt="Government of India Logo"
+                      className="w-full h-full object-contain rounded-full"
+                    />
                   </div>
                   <h4 className="text-lg font-rajdhani font-bold text-white mb-1">
                     Government of India
@@ -230,7 +223,7 @@ const GovFooter = () => {
             
             {/* Copyright */}
             <div className="text-sm text-secondary-foreground/70 text-center lg:text-left">
-              <p className="font-medium">© {currentYear} GatiRakshak - Ministry of Railways, Government of India</p>
+              <p className="font-medium">© {currentYear} गति Rakshak - Ministry of Railways, Government of India</p>
               <p className="mt-1 text-xs">
                 All rights reserved. This is an official website of the Government of India.
               </p>

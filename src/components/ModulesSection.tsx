@@ -2,6 +2,7 @@ import { Shield, TrendingUp, Zap, BarChart3, Eye, Brain, Route, Signal } from "l
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import controlRoomImage from "@/assets/railway-control-room.jpg";
+import ujwalBg from "@/assets/ujwal-bg.jpg";
 import tracksImage from "@/assets/railway-tracks.jpg";
 import stationImage from "@/assets/train-station.jpg";
 
@@ -95,7 +96,7 @@ const ModulesSection = () => {
       icon: BarChart3,
       color: "text-purple-600",
       bgColor: "bg-purple-50", 
-      image: controlRoomImage,
+      image: ,
       description: "Ujwal is the analytics powerhouse that processes over 10 lakh data points every hour from across the network. Railway Board members can see live punctuality rates, average delays per route, and track utilization in real-time. Every recommendation made by AI and every decision taken by human controllers is logged with timestamps for complete transparency and accountability. Monthly performance reports show exactly how the system is improving railway operations.",
       features: [
         {

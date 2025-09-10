@@ -33,7 +33,7 @@ const HeroSection = () => {
 
           {/* Main Heading */}
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-            <span className="block">GatiRakshak</span>
+            <span className="block">गति Rakshak</span>
             <span className="block text-3xl md:text-4xl font-normal opacity-90 mt-2">
               AI-Powered Rail Management System
             </span>

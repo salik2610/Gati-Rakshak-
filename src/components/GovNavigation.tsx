@@ -45,13 +45,6 @@ const GovNavigation = () => {
             <span className="text-secondary-foreground/70">|</span>
             <span className="text-secondary-foreground/90">Government of India</span>
           </div>
-          <div className="hidden md:flex items-center space-x-4 text-xs">
-            <span className="text-secondary-foreground/70">Last Updated: Jan 2025</span>
-            <span className="text-secondary-foreground/70">|</span>
-            <a href="#" className="text-secondary-foreground/90 hover:text-white transition-colors">
-              हिन्दी
-            </a>
-          </div>
         </div>
       </div>
 
@@ -67,15 +60,14 @@ const GovNavigation = () => {
             {/* Government Logo & Branding */}
             <div className="flex items-center space-x-4">
               <div className="flex items-center space-x-3">
-                <div className="w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center border-2 border-primary/20 shadow-lg">
-                  <div className="text-center">
-                    <div className="text-white font-bold text-lg font-rajdhani">G</div>
-                    <div className="text-white text-xs font-medium">R</div>
-                  </div>
-                </div>
+                <img
+                  src="/logo.png"
+                  alt="Gati Rakshak logo"
+                  className="w-16 h-16 object-contain rounded-lg border-2 border-primary/20 shadow-lg"
+                />
                 <div className="border-l-2 border-border pl-4">
                   <h1 className="text-2xl font-rajdhani font-bold text-secondary gov-gradient-text">
-                    GatiRakshak
+                  गति Rakshak
                   </h1>
                   <p className="text-xs text-muted-foreground font-medium uppercase tracking-wide">
                     AI Railway Management System
@@ -114,12 +106,6 @@ const GovNavigation = () => {
               })}
 
               {/* Removed More dropdown */}
-
-              <Button 
-                className="ml-4 bg-primary text-primary-foreground hover:bg-primary/90 font-medium px-6 shadow-md"
-              >
-                Access Portal
-              </Button>
             </div>
 
             {/* Mobile menu button */}
@@ -167,11 +153,6 @@ const GovNavigation = () => {
                   );
                 })}
                 
-                <div className="pt-4 border-t border-border">
-                  <Button className="w-full bg-primary text-primary-foreground">
-                    Access Portal
-                  </Button>
-                </div>
               </div>
             </div>
           )}

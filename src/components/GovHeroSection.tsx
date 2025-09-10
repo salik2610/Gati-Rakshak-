@@ -44,7 +44,7 @@ const GovHeroSection = () => {
             {/* Main Heading */}
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-7xl font-rajdhani font-bold text-secondary leading-tight">
-                <span className="block">GatiRakshak</span>
+                <span className="block">गति Rakshak</span>
                 <span className="block text-3xl lg:text-4xl font-medium text-muted-foreground mt-2">
                   AI-Powered Rail Management System
                 </span>

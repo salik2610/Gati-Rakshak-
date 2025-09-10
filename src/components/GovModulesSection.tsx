@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/modern-train-hero.jpg";
+import ujwalBg from "@/assets/Ujjwal-bg.jpg";
 import controlRoomImage from "@/assets/railway-control-room.jpg";
 import tracksImage from "@/assets/railway-tracks.jpg";
 import stationImage from "@/assets/train-station.jpg";
@@ -38,8 +39,7 @@ const GovModulesSection = () => {
       description: "Intelligent scheduling system that optimizes train flow and reduces delays through predictive traffic management.",
       keyFeatures: [
         "Dynamic train scheduling",
-        "Priority-based routing",
-        "What-if scenario testing", 
+        "Priority-based routing", 
         "Network impact analysis"
       ],
       stats: { value: "35%", label: "Efficiency Gain" },
@@ -70,7 +70,7 @@ const GovModulesSection = () => {
       icon: BarChart3,
       color: "from-purple-500 to-purple-600",
       bgGradient: "from-purple-50 to-purple-100",
-      image: heroImage,
+      image: ujwalBg,
       description: "Comprehensive analytics platform providing real-time insights and performance monitoring for data-driven decisions.",
       keyFeatures: [
         "Real-time KPI dashboard",

@@ -45,13 +45,13 @@ const GovAboutSection = () => {
             
             <div className="space-y-4">
               <h2 className="text-4xl lg:text-5xl font-rajdhani font-bold text-secondary leading-tight">
-                About GatiRakshak
+                About Gati Rakshak
               </h2>
               <div className="h-1 w-24 bg-gradient-to-r from-primary to-accent rounded-full" />
             </div>
 
             <p className="text-lg text-muted-foreground leading-relaxed">
-              GatiRakshak is an innovative AI-powered system designed to modernize railway operations through cutting-edge technology. 
+              Gati Rakshak is an innovative AI-powered system designed to modernize railway operations through cutting-edge technology. 
               This comprehensive platform addresses critical challenges of safety, efficiency, and resource optimization 
               across India's vast railway network infrastructure.
             </p>
@@ -66,7 +66,7 @@ const GovAboutSection = () => {
               
               <div className="space-y-4 text-base md:text-lg text-muted-foreground leading-relaxed">
                 <p>
-                  GatiRakshak is a comprehensive AI system that reimagines railway operations through cutting-edge artificial intelligence. 
+                  Gati Rakshak is a comprehensive AI system that reimagines railway operations through cutting-edge artificial intelligence. 
                   Our team of engineers and data scientists have developed this advanced platform to solve real-world challenges 
                   in India's railway network - from preventing accidents to optimizing resource allocation.
                 </p>
@@ -128,7 +128,7 @@ const GovAboutSection = () => {
             </h3>
             
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-4xl mx-auto mb-6">
-              GatiRakshak is an advanced AI innovation that demonstrates the potential of artificial intelligence in transforming railway operations. 
+              Gati Rakshak is an advanced AI innovation that demonstrates the potential of artificial intelligence in transforming railway operations. 
               Our intelligent system addresses real challenges faced by railway networks through automated decision-making and predictive analytics, 
               showcasing how technology can enhance safety, efficiency, and passenger experience in India's transportation infrastructure.
             </p>

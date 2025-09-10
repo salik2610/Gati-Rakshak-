@@ -41,7 +41,7 @@ const Navigation = () => {
               <span className="text-primary-foreground font-bold text-lg">G</span>
             </div>
             <div>
-              <h1 className="text-xl font-bold gradient-text">GatiRakshak</h1>
+              <h1 className="text-xl font-bold gradient-text">गति Rakshak</h1>
               <p className="text-xs text-muted-foreground">Indian Railways</p>
             </div>
           </div>
