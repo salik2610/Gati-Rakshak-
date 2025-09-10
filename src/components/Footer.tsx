@@ -7,7 +7,7 @@ const Footer = () => {
   const links = {
     modules: [
       { name: "Suraksha - Safety Module", href: "#suraksha" },
-      { name: "Pravah - Optimization", href: "#pravah" },
+      { name: "Sanchaar - Optimization", href: "#sanchaar" },
       { name: "Vichaar - Resource Allocation", href: "#vichaar" },
       { name: "Ujwal - Performance Analytics", href: "#ujwal" }
     ],
@@ -25,7 +25,7 @@ const Footer = () => {
     ]
   };
 
-  const contactInfo = [,
+  const contactInfo = [
     { icon: Phone, label: "Helpline", value: "1800-111-139" },
     { icon: MapPin, label: "Address", value: "Railway Board, New Delhi - 110001" }
   ];

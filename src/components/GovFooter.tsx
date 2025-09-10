@@ -13,7 +13,7 @@ const GovFooter = () => {
 
   const modules = [
     { name: "Suraksha - Safety Management", href: "#suraksha" },
-    { name: "Pravah - Traffic Optimization", href: "#pravah" },
+    { name: "Sanchaar - Traffic Optimization", href: "#sanchaar" },
     { name: "Vichaar - Resource Allocation", href: "#vichaar" },
     { name: "Ujwal - Performance Analytics", href: "#ujwal" }
   ];

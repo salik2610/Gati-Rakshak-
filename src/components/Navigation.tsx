@@ -16,7 +16,7 @@ const Navigation = () => {
 
   const navItems = [
     { name: "Suraksha", href: "#suraksha", icon: Shield },
-    { name: "Pravah", href: "#pravah", icon: TrendingUp },
+    { name: "Sanchaar", href: "#sanchaar", icon: TrendingUp },
     { name: "Vichaar", href: "#vichaar", icon: Zap },
     { name: "Ujwal", href: "#ujwal", icon: BarChart3 },
   ];

@@ -29,8 +29,8 @@ const GovModulesSection = () => {
       benefits: "Prevents train collisions through continuous monitoring of train positions and track conditions using advanced AI algorithms."
     },
     {
-      id: "pravah", 
-      title: "Pravah",
+      id: "sanchaar", 
+      title: "Sanchaar",
       subtitle: "Traffic Flow Optimization",
       icon: TrendingUp,
       color: "from-blue-500 to-blue-600",

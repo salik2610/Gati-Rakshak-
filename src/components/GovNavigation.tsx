@@ -22,7 +22,7 @@ const GovNavigation = () => {
 
   const navItems = [
     { name: "Suraksha", href: "#suraksha", icon: Shield, desc: "Safety Module" },
-    { name: "Pravah", href: "#pravah", icon: TrendingUp, desc: "Optimization" },
+    { name: "Sanchaar", href: "#sanchaar", icon: TrendingUp, desc: "Optimization" },
     { name: "Vichaar", href: "#vichaar", icon: Zap, desc: "Resource Allocation" },
     { name: "Ujwal", href: "#ujwal", icon: BarChart3, desc: "Analytics" },
   ];

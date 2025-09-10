@@ -37,13 +37,13 @@ const ModulesSection = () => {
     },
     {
       id: "pravah",
-      title: "Pravah", 
+      title: "Sanchaar", 
       subtitle: "The Optimization Module",
       icon: TrendingUp,
       color: "text-blue-600",
       bgColor: "bg-blue-50",
       image: controlRoomImage,
-      description: "Pravah handles the complex task of managing train traffic across India's busy railway network. When multiple trains need to use the same track section, the system automatically prioritizes based on train importance - Rajdhani and Shatabdi get priority over goods trains. The 'What-If' simulation feature is particularly useful - controllers can test different scenarios like 'What happens if I hold this goods train for 10 minutes?' and see the ripple effect across the entire zone before making the actual decision.",
+      description: "Sanchaar handles the complex task of managing train traffic across India's busy railway network. When multiple trains need to use the same track section, the system automatically prioritizes based on train importance - Rajdhani and Shatabdi get priority over goods trains. The 'What-If' simulation feature is particularly useful - controllers can test different scenarios like 'What happens if I hold this goods train for 10 minutes?' and see the ripple effect across the entire zone before making the actual decision.",
       features: [
         {
           icon: Route,
