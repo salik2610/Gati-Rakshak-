@@ -12,9 +12,9 @@ const GovFooter = () => {
   ];
 
   const modules = [
-    { name: "Suraksha - Safety Management", href: "https://ujwal-rho.vercel.app/", external: true },
-    { name: "Sanchaar - Traffic Optimization", href: "https://ujwal-rho.vercel.app/", external: true },
-    { name: "Vichaar - Resource Allocation", href: "https://ujwal-rho.vercel.app/", external: true },
+    { name: "Suraksha - Safety Management", href: "https://suraksha-three.vercel.app/", external: true },
+    { name: "Sanchaar - Traffic Optimization", href: "https://sanchaar-hb83.vercel.app/", external: true },
+    { name: "Vichaar - Resource Allocation", href: "https://vichaar-six.vercel.app/", external: true },
     { name: "Ujwal - Performance Analytics", href: "https://ujwal-rho.vercel.app/", external: true }
   ];
 
