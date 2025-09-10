@@ -12,10 +12,10 @@ const GovFooter = () => {
   ];
 
   const modules = [
-    { name: "Suraksha - Safety Management", href: "#suraksha" },
-    { name: "Sanchaar - Traffic Optimization", href: "#sanchaar" },
-    { name: "Vichaar - Resource Allocation", href: "#vichaar" },
-    { name: "Ujwal - Performance Analytics", href: "#ujwal" }
+    { name: "Suraksha - Safety Management", href: "https://ujwal-rho.vercel.app/", external: true },
+    { name: "Sanchaar - Traffic Optimization", href: "https://ujwal-rho.vercel.app/", external: true },
+    { name: "Vichaar - Resource Allocation", href: "https://ujwal-rho.vercel.app/", external: true },
+    { name: "Ujwal - Performance Analytics", href: "https://ujwal-rho.vercel.app/", external: true }
   ];
 
 
@@ -130,13 +130,16 @@ const GovFooter = () => {
               <ul className="space-y-3">
                 {modules.map((link) => (
                   <li key={link.name}>
-                    <button
-                      onClick={() => scrollToSection(link.href)}
+                    <a
+                      href={link.href}
                       className="text-secondary-foreground/80 hover:text-white transition-colors text-sm flex items-center group"
+                      target={link.external ? "_blank" : "_self"}
+                      rel={link.external ? "noopener noreferrer" : ""}
                     >
-                      <span className="w-1 h-1 bg-primary rounded-full mr-3 group-hover:bg-accent transition-colors" />
+                      <span className="w-1 h-1 bg-accent rounded-full mr-3 group-hover:bg-primary transition-colors" />
                       {link.name}
-                    </button>
+                      {link.external && <ExternalLink className="w-3 h-3 ml-1 opacity-60" />}
+                    </a>
                   </li>
                 ))}
               </ul>

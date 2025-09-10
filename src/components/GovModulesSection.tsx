@@ -9,6 +9,7 @@ import tracksImage from "@/assets/railway-tracks.jpg";
 import stationImage from "@/assets/train-station.jpg";
 
 const GovModulesSection = () => {
+  // Add external links for each module
   const modules = [
     {
       id: "suraksha",
@@ -26,7 +27,8 @@ const GovModulesSection = () => {
         "Real-time alert systems"
       ],
       stats: { value: "99.8%", label: "Safety Rate" },
-      benefits: "Prevents train collisions through continuous monitoring of train positions and track conditions using advanced AI algorithms."
+      benefits: "Prevents train collisions through continuous monitoring of train positions and track conditions using advanced AI algorithms.",
+      link: "https://suraksha-three.vercel.app/"
     },
     {
       id: "sanchaar", 
@@ -43,7 +45,8 @@ const GovModulesSection = () => {
         "Network impact analysis"
       ],
       stats: { value: "35%", label: "Efficiency Gain" },
-      benefits: "Improves punctuality and reduces delays by intelligently managing train schedules and resolving traffic conflicts."
+      benefits: "Improves punctuality and reduces delays by intelligently managing train schedules and resolving traffic conflicts.",
+      link: "https://sanchaar-hb83.vercel.app/"
     },
     {
       id: "vichaar",
@@ -61,7 +64,8 @@ const GovModulesSection = () => {
         "Congestion management"
       ],
       stats: { value: "40%", label: "Resource Efficiency" },
-      benefits: "Maximizes platform utilization and reduces waiting times through predictive allocation and intelligent signal coordination."
+      benefits: "Maximizes platform utilization and reduces waiting times through predictive allocation and intelligent signal coordination.",
+      link: "https://vichaar-six.vercel.app/"
     },
     {
       id: "ujwal",
@@ -79,7 +83,8 @@ const GovModulesSection = () => {
         "Predictive reporting"
       ],
       stats: { value: "24/7", label: "Monitoring" },
-      benefits: "Provides comprehensive insights into network performance with real-time analytics and predictive trend analysis."
+      benefits: "Provides comprehensive insights into network performance with real-time analytics and predictive trend analysis.",
+      link: "https://ujwal-rho.vercel.app/"
     }
   ];
 
@@ -186,20 +191,16 @@ const GovModulesSection = () => {
                   </div>
 
                   {/* Action Button */}
-                  <Button 
-                    variant="outline" 
-                    onClick={() => {
-                      const el = document.querySelector(`#${module.id}`);
-                      if (el) {
-                        el.scrollIntoView({ behavior: 'smooth' });
-                      }
-                    }}
-                    className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300"
+                  <a
+                    href={module.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full inline-flex items-center justify-center px-4 py-2 border border-input bg-background hover:bg-primary hover:text-primary-foreground transition-colors duration-300 rounded-md font-medium group"
                   >
                     <Play className="w-4 h-4 mr-2" />
                     Explore {module.title} System
                     <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                  </Button>
+                  </a>
                 </CardContent>
               </Card>
             );

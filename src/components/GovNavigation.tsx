@@ -21,10 +21,10 @@ const GovNavigation = () => {
   }, []);
 
   const navItems = [
-    { name: "Suraksha", href: "#suraksha", icon: Shield, desc: "Safety Module" },
-    { name: "Sanchaar", href: "#sanchaar", icon: TrendingUp, desc: "Optimization" },
-    { name: "Vichaar", href: "#vichaar", icon: Zap, desc: "Resource Allocation" },
-    { name: "Ujwal", href: "#ujwal", icon: BarChart3, desc: "Analytics" },
+    { name: "Suraksha", href: "https://suraksha-three.vercel.app/", icon: Shield, desc: "Safety Module", external: true },
+    { name: "Sanchaar", href: "https://sanchaar-hb83.vercel.app/", icon: TrendingUp, desc: "Optimization", external: true },
+    { name: "Vichaar", href: "https://vichaar-six.vercel.app/", icon: Zap, desc: "Resource Allocation", external: true },
+    { name: "Ujwal", href: "https://ujwal-rho.vercel.app/", icon: BarChart3, desc: "Analytics", external: true },
   ];
 
   const scrollToSection = (href: string) => {
@@ -89,19 +89,27 @@ const GovNavigation = () => {
 
               {navItems.map((item) => {
                 const Icon = item.icon;
+                const isExternal = !item.href.startsWith("#");
                 return (
-                  <Button
+                  <a
                     key={item.name}
-                    variant="ghost"
-                    onClick={() => scrollToSection(item.href)}
-                    className="flex items-center space-x-2 px-4 py-2 text-sm font-medium text-foreground hover:text-primary hover:bg-muted/50 transition-all group"
+                    href={item.href}
+                    onClick={e => {
+                      if (item.href.startsWith("#")) {
+                        e.preventDefault();
+                        scrollToSection(item.href);
+                      }
+                    }}
+                    className="flex items-center space-x-2 px-4 py-2 text-sm font-medium text-foreground hover:text-primary hover:bg-muted/50 transition-all group rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                    target={isExternal ? "_blank" : undefined}
+                    rel={isExternal ? "noopener noreferrer" : undefined}
                   >
                     <Icon className="w-4 h-4 group-hover:scale-110 transition-transform" />
                     <div className="text-left">
                       <div>{item.name}</div>
                       <div className="text-xs text-muted-foreground">{item.desc}</div>
                     </div>
-                  </Button>
+                  </a>
                 );
               })}
 

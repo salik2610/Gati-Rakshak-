@@ -36,7 +36,7 @@ const ModulesSection = () => {
       ]
     },
     {
-      id: "pravah",
+      id: "sanchaar",
       title: "Sanchaar", 
       subtitle: "The Optimization Module",
       icon: TrendingUp,

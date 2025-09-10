@@ -2,6 +2,13 @@ import { useState, useEffect } from "react";
 import { Menu, X, Shield, TrendingUp, Zap, BarChart3 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+const navItems = [
+  { name: "Suraksha", href: "https://suraksha-three.vercel.app/", icon: Shield },
+  { name: "Sanchaar", href: "https://sanchaar-hb83.vercel.app/", icon: TrendingUp },
+  { name: "Vichaar", href: "https://vichaar-six.vercel.app/", icon: Zap },
+  { name: "Ujwal", href: "https://ujwal-rho.vercel.app/", icon: BarChart3 },
+];
+
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -14,25 +21,14 @@ const Navigation = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navItems = [
-    { name: "Suraksha", href: "#suraksha", icon: Shield },
-    { name: "Sanchaar", href: "#sanchaar", icon: TrendingUp },
-    { name: "Vichaar", href: "#vichaar", icon: Zap },
-    { name: "Ujwal", href: "#ujwal", icon: BarChart3 },
-  ];
-
-  const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-      setIsMenuOpen(false);
-    }
-  };
-
   return (
-    <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-      isScrolled ? "bg-background/95 backdrop-blur-md shadow-lg" : "bg-transparent"
-    }`}>
+    <nav
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+        isScrolled
+          ? "bg-background/95 backdrop-blur-md shadow-lg"
+          : "bg-transparent"
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -51,21 +47,30 @@ const Navigation = () => {
             {navItems.map((item) => {
               const Icon = item.icon;
               return (
-                <button
+                <a
                   key={item.name}
-                  onClick={() => scrollToSection(item.href)}
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center space-x-2 text-sm font-medium text-foreground hover:text-primary transition-colors group"
                 >
                   <Icon className="w-4 h-4 group-hover:scale-110 transition-transform" />
                   <span>{item.name}</span>
-                </button>
+                </a>
               );
             })}
-            <Button 
-              variant="outline" 
+            <Button
+              variant="outline"
               className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+              asChild
             >
-              Get Started
+              <a
+                href="https://suraksha-three.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Get Started
+              </a>
             </Button>
           </div>
 
@@ -74,7 +79,7 @@ const Navigation = () => {
             variant="ghost"
             size="sm"
             className="md:hidden"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            onClick={() => setIsMenuOpen((open) => !open)}
           >
             {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </Button>
@@ -87,18 +92,31 @@ const Navigation = () => {
               {navItems.map((item) => {
                 const Icon = item.icon;
                 return (
-                  <button
+                  <a
                     key={item.name}
-                    onClick={() => scrollToSection(item.href)}
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center space-x-3 w-full text-left py-2 text-foreground hover:text-primary transition-colors"
+                    onClick={() => setIsMenuOpen(false)}
                   >
                     <Icon className="w-4 h-4" />
                     <span>{item.name}</span>
-                  </button>
+                  </a>
                 );
               })}
-              <Button className="w-full mt-4 bg-primary text-primary-foreground">
-                Get Started
+              <Button
+                className="w-full mt-4 bg-primary text-primary-foreground"
+                asChild
+              >
+                <a
+                  href="https://suraksha-three.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Get Started
+                </a>
               </Button>
             </div>
           </div>

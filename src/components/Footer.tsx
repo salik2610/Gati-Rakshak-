@@ -9,7 +9,7 @@ const Footer = () => {
       { name: "Suraksha - Safety Module", href: "#suraksha" },
       { name: "Sanchaar - Optimization", href: "#sanchaar" },
       { name: "Vichaar - Resource Allocation", href: "#vichaar" },
-      { name: "Ujwal - Performance Analytics", href: "#ujwal" }
+      { name: "Ujwal - Performance Analytics", href: "https://ujwal-rho.vercel.app/", external: true }
     ],
     government: [
       { name: "Ministry of Railways", href: "#", external: true },
@@ -80,12 +80,24 @@ const Footer = () => {
             <ul className="space-y-3">
               {links.modules.map((link) => (
                 <li key={link.name}>
-                  <button
-                    onClick={() => scrollToSection(link.href)}
-                    className="text-secondary-foreground/80 hover:text-white transition-colors text-sm"
-                  >
-                    {link.name}
-                  </button>
+                  {((link as any).external) ? (
+                    <a
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-secondary-foreground/80 hover:text-white transition-colors text-sm flex items-center gap-1"
+                    >
+                      {link.name}
+                      <ExternalLink className="w-3 h-3" />
+                    </a>
+                  ) : (
+                    <button
+                      onClick={() => scrollToSection(link.href)}
+                      className="text-secondary-foreground/80 hover:text-white transition-colors text-sm"
+                    >
+                      {link.name}
+                    </button>
+                  )}
                 </li>
               ))}
             </ul>
@@ -136,9 +148,12 @@ const Footer = () => {
                   <li key={link.name}>
                     <a
                       href={link.href}
-                      className="text-secondary-foreground/80 hover:text-white transition-colors text-sm"
+                      className="text-secondary-foreground/80 hover:text-white transition-colors text-sm flex items-center gap-1"
+                      target={(link as any).external ? "_blank" : "_self"}
+                      rel={(link as any).external ? "noopener noreferrer" : ""}
                     >
                       {link.name}
+                      {(link as any).external && <ExternalLink className="w-3 h-3" />}
                     </a>
                   </li>
                 ))}
